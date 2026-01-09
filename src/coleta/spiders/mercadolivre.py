@@ -1,10 +1,9 @@
 import scrapy
 
-
 class MercadolivreSpider(scrapy.Spider):
     name = "mercadolivre"
     allowed_domains = ["lista.mercadolivre.com.br"]
-    start_urls = ["https://lista.mercadolivre.com.br/tenis-corrida-masculino"]
+    start_urls = [f"https://lista.mercadolivre.com.br/tenis-corrida-masculino"]
     page_count = 1
     max_pages = 10
 
